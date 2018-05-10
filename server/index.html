@@ -1,0 +1,20 @@
+<script>
+var loc = window.location.pathname;
+var dir = loc.substring(0, loc.lastIndexOf('/'));
+console.log("loc = " + loc);
+console.log("dir = " + dir);
+</script>
+
+<script src="js/angular.min.js"></script>
+<script src="js/roster.js"></script>
+
+
+
+<div ng-app="RosterApp">
+<div ng-controller="RosterController">
+        <h1>{{greeting}}</h1>
+    </div>
+</div>
+<div>
+just a test
+</div>

@@ -1,0 +1,25 @@
+{
+  "name": "dfs",
+  "version": "1.0.0",
+  "description": "Daily Fantasy Sports - Data",
+  "main": "app.js",
+  "scripts": {
+    "clean": "rm -rf static/css && mkdir -p static/css",
+    "build": "npm run clean && npm run build-css",
+    "dfs": "npm run clean && nodemon -e js,jade",
+    "start": "node server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "DFS-Data"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.3",
+    "express-fileupload": "^0.4.0",
+    "jade": "^1.11.0",
+    "morgan": "^1.9.0",
+    "nodemon": "^1.9.2",
+    "stylus": "^0.54.5"
+  }
+}
